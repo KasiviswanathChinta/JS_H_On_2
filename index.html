@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>DECISION MAKING</h1>
+
+    <p>Q1:Calculator</p>
+    <p>Answer:</p>
+    <p>const Calculator = (A, B, C) =><br> 
+        {<br>
+            switch(A){<br>
+            case"+": return B+C;<br>
+            case"-": return B-C;<br> 
+            case"*": return B*C;<br> 
+            case"/": return B/C;<br>
+            }<br>
+        };
+</p>
+
+
+<p>Q2:Check whether the condition is fulfilled or not?</p>
+    <p>Answer:</p>
+    <p>const Check_divisibility = (N) => {<br>
+        if ((N%6===0) && (N%9===0)) {<br>
+          return "Divisible by both";<br>
+        }<br>
+        else {<br>
+          return "Not Divisible by both";<br>
+        }<br>
+      };
+</p>
+
+<p>Q3:Eligible Voter</p>
+    <p>Answer:</p>
+    <p>const isEligible = (a) => {<br>
+        if (a<18){<br>
+          return "Not Eligible for Voting";<br>
+        }<br>
+        else{<br>
+          return "Eligible for Voting";<br>
+        }<br>
+      };
+</p>
+
+<p>Q4: Find Relation</p>
+    <p>Answer:</p>
+    <p>const findRelation = (x,y) => {<br>
+        if (x<y){<br>
+        return x + " is smaller than " + y; <br>
+        }<br>
+        else if (x>y){<br>
+        return x + " is greater than " + y;<br>
+        }<br>
+        else { <br>
+        return x +" is equal to "+ y;<br>
+        }<br>
+      };
+</p>
+
+
+<p>Q5: Find Grades</p>
+    <p>Answer:</p>
+    <p>const findGrades = (a) => {<br>
+        if(a<=50 && a>=41) {<br>
+          return "A";<br>
+        } <br>
+        else if(a<=40 && a>=31) {<br>
+          return "B";<br>
+        }br
+        else if(a<=30 && a>=21) {<br>
+          return "C";<br>
+        }br
+        else if(a<=20 && a>=11) {<br>
+          return "D";<br>
+        }br
+        else {<br>
+          return "E";<br>
+        } <br>
+      };
+</p>
+
+<p>Q6:Get Value</p>
+    <p>Answer:</p>
+    <p>const getValue = (a) => {<br>
+        if((a==="p")||(a==="P")) {<br>
+          return "PrepBytes";<br>
+        }<br>
+        else if((a==="z")||(a==="Z")) {<br>
+          return "Zenith";<br>
+        }<br>
+        else if((a==="e")||(a==="E")) {<br>
+          return "Expert Coder";<br>
+        }<br>
+        else {<br>
+          return "Data Structure";<br>
+        }<br>
+      };
+</p>
+
+<p>Q7:Find the maximum number out of three</p>
+    <p>Answer:</p>
+    <p>const Max_out_of_three = (A,B,C) => {<br>
+        if ((A>B)&&(A>C)) {<br>
+          return A;<br>
+        }<br>
+        else if ((C>B)&&(C>A)) {<br>
+          return C;<br>
+        }<br>
+        else if ((B>C)&&(B>A)) {<br>
+          return B;<br>
+        }<br>
+        else {<br>
+          return -1;<br>
+        }<br>
+      };
+</p>
+
+<p>Q8:Second Smallest</p>
+    <p>Answer:</p>
+    <p>const findSndSmallest = (x,y,z) => {<br>
+        if (((x < y) && (y < z)) || ((x > y) && (y > z))){<br> 
+          return y;<br> 
+        }<br> 
+        else if (((x > y) && (x < z)) || ((x > z) && (x < y))){<br> 
+          return x;<br> 
+        }<br> 
+        else {<br> 
+          return z;<br> 
+        }<br> 
+    };<br> 
+</p>
+
+<p>Q9:Check whether the triangle is Acute or Obtuse</p>
+    <p>Answer:</p>
+    <p>const Triangle_Check = (A,B,C) => {<br>
+        if(A>90&&B<90&&C<90){<br>
+          return "obtuse";<br>
+        }br
+        else{<br>
+          return "acute";<br>
+        }br
+     };
+</p>
+</body>
+</html>
